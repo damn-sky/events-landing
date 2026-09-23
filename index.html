@@ -7,7 +7,7 @@
   <meta name="description" content="Билеты на ночной фестиваль «Город не спит»: 14 ноября, Симферополь, три сцены. Стандарт 2 500 ₽, VIP 6 900 ₽, стол на 4 человека 24 000 ₽. Свободно 86 мест.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://damn-sky.github.io/events-landing/">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,15 +49,18 @@
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">14 ноября 2026 · Симферополь · вход с 20:30</p>
-      <h1>Билеты на ночной фестиваль «Город не спит»</h1>
-      <p class="lead">Три сцены на одну ночь. На площадке 400 мест, свободно 86. Вход закрывается в 23:00.</p>
-      <a class="btn" href="#tickets">Выбрать билет</a>
-      <ul class="facts">
-        <li><strong>86</strong><span>мест в продаже</span></li>
-        <li><strong>3</strong><span>сцены</span></li>
-        <li><strong>23:00</strong><span>закрытие входа</span></li>
-      </ul>
+      <img class="hero-photo" src="img/hero.jpg" width="1600" height="900" alt="Ночная сцена фестиваля «Город не спит»">
+      <div class="hero-copy">
+        <p class="eyebrow">14 ноября 2026 · Симферополь · вход с 20:30</p>
+        <h1>Билеты на ночной фестиваль «Город не спит»</h1>
+        <p class="lead">Три сцены на одну ночь. На площадке 400 мест, свободно 86. Вход закрывается в 23:00.</p>
+        <a class="btn" href="#tickets">Выбрать билет</a>
+        <ul class="facts">
+          <li><strong>86</strong><span>мест в продаже</span></li>
+          <li><strong>3</strong><span>сцены</span></li>
+          <li><strong>23:00</strong><span>закрытие входа</span></li>
+        </ul>
+      </div>
     </section>
 
     <section id="tickets">
@@ -98,29 +101,26 @@
 
     <section id="lineup">
       <h2>Артисты фестиваля</h2>
-      <ol class="lineup">
-        <li>
+      <div class="grid grid-3 artists">
+        <article class="card artist">
+          <img src="img/artist-1.jpg" width="800" height="800" alt="Артист Северное сияние на сцене" loading="lazy">
           <p class="time">21:00</p>
-          <div>
-            <h3>Северное сияние</h3>
-            <p>Главная сцена, электронный сет.</p>
-          </div>
-        </li>
-        <li>
+          <h3>Северное сияние</h3>
+          <p>Главная сцена, электронный сет.</p>
+        </article>
+        <article class="card artist">
+          <img src="img/artist-2.jpg" width="800" height="800" alt="Артист Тихий порт с гитарой" loading="lazy">
           <p class="time">22:30</p>
-          <div>
-            <h3>Тихий порт</h3>
-            <p>Двор, живые инструменты.</p>
-          </div>
-        </li>
-        <li>
+          <h3>Тихий порт</h3>
+          <p>Двор, живые инструменты.</p>
+        </article>
+        <article class="card artist">
+          <img src="img/artist-3.jpg" width="800" height="800" alt="Артист Ночной рейс в свете софита" loading="lazy">
           <p class="time">00:10</p>
-          <div>
-            <h3>Ночной рейс</h3>
-            <p>Главная сцена, закрывающий сет.</p>
-          </div>
-        </li>
-      </ol>
+          <h3>Ночной рейс</h3>
+          <p>Главная сцена, закрывающий сет.</p>
+        </article>
+      </div>
     </section>
 
     <section id="program">
@@ -177,10 +177,24 @@
     </section>
   </main>
 
-  <footer>
-    <p>Демо-лендинг Damnsky · Илья Бельченков · <a href="https://t.me/damn_sky">@damn_sky</a></p>
+  <footer class="footer">
+    <div>
+      <p class="logo">Город не спит</p>
+      <p>Ночной фестиваль. Демо-лендинг, билеты не продаются.</p>
+    </div>
+    <nav aria-label="Подвал">
+      <a href="#tickets">Билеты</a>
+      <a href="#lineup">Артисты</a>
+      <a href="#program">Расписание</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div>
+      <p>Симферополь, набережная</p>
+      <p>14 ноября 2026, вход с 20:30</p>
+      <p><a href="https://t.me/damn_sky">Telegram @damn_sky</a></p>
+    </div>
   </footer>
   <a class="mobile-cta" href="#tickets">Выбрать билет</a>
-  <script src="main.js?v=3"></script>
+  <script src="main.js?v=4"></script>
 </body>
 </html>
