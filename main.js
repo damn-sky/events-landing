@@ -30,7 +30,7 @@ form.addEventListener("submit", (event) => {
     return;
   }
   const data = new FormData(form);
-  noteText.textContent = data.get("name") + ", пакет «" + data.get("pack") + "».";
+  noteText.textContent = data.get("name") + ", " + data.get("count") + " мест, «" + data.get("pack") + "».";
   note.hidden = false;
   form.classList.add("is-sent");
 });
