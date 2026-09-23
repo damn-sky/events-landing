@@ -7,7 +7,7 @@
   <meta name="description" content="Билеты на ночной фестиваль «Город не спит»: 14 ноября, Симферополь, три сцены. Стандарт 2 500 ₽, VIP 6 900 ₽, стол на 4 человека 24 000 ₽. Свободно 86 мест.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://damn-sky.github.io/events-landing/">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,7 +49,7 @@
 
   <main id="top">
     <section class="hero">
-      <img class="hero-photo" src="img/hero.jpg" width="1600" height="900" alt="Ночная сцена фестиваля «Город не спит»">
+      <img class="hero-photo" src="img/hero.jpg?v=5" width="1600" height="900" alt="Ночная сцена фестиваля «Город не спит» у воды">
       <div class="hero-copy">
         <p class="eyebrow">14 ноября 2026 · Симферополь · вход с 20:30</p>
         <h1>Билеты на ночной фестиваль «Город не спит»</h1>
@@ -172,8 +172,12 @@
           </select>
         </label>
         <button class="btn" type="submit">Отправить заявку</button>
-        <p id="form-note" class="form-note" role="status" hidden></p>
       </form>
+      <div id="form-note" class="form-note" role="status" hidden>
+        <p class="form-note-mark">Заявка принята</p>
+        <p id="form-note-text"></p>
+        <p class="form-note-hint">Это демо: оплата не списывается, данные никуда не уходят.</p>
+      </div>
     </section>
   </main>
 
@@ -195,6 +199,6 @@
     </div>
   </footer>
   <a class="mobile-cta" href="#tickets">Выбрать билет</a>
-  <script src="main.js?v=4"></script>
+  <script src="main.js?v=5"></script>
 </body>
 </html>

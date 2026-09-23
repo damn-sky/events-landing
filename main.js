@@ -1,6 +1,7 @@
 const form = document.querySelector("#ticket-form");
 const pack = document.querySelector("#pack");
 const note = document.querySelector("#form-note");
+const noteText = document.querySelector("#form-note-text");
 const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector("#site-nav");
 
@@ -29,7 +30,7 @@ form.addEventListener("submit", (event) => {
     return;
   }
   const data = new FormData(form);
+  noteText.textContent = data.get("name") + ", пакет «" + data.get("pack") + "».";
   note.hidden = false;
-  note.textContent = "Демо-заявка: " + data.get("name") + ", «" + data.get("pack") + "». Оплата не списывается.";
-  form.reset();
+  form.classList.add("is-sent");
 });
